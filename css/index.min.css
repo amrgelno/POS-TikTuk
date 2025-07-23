@@ -1,0 +1,169 @@
+.Header-container {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, .12) 0 1px 1px;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    -webkit-box-align: center;
+    align-items: center;
+    background: #fff;
+    z-index: 3000;
+    bottom: 350px
+}
+
+.DivHeaderWrapperMain {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    app-region: drag;
+    max-width: 1150px;
+    padding-right: 24px;
+    padding-left: 20px
+}
+
+.DivMainContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 24px 0;
+    position: relative;
+    row-gap: 24px
+}
+
+.ButtonSearch {
+    padding: 11px 16px 11px 12px;
+    margin: -12px -16px -12px 0;
+    font-size: 0;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    background: 0 0;
+    border-left: 1px solid #979292
+}
+
+.price-ButtonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: unset;
+    overflow: hidden;
+    border-radius: .5rem;
+    border: 3px solid rgb(191 191 191);
+    bottom: 50px;
+    height: 110px;
+    margin-bottom: 17px;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.DivNumContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+    height: 60%;
+}
+
+.DivNumContainer span {
+    line-height: 2px;
+}
+
+.active {
+    border: 3px solid #fe3;
+    outline: 2px solid #5959e5
+}
+
+.DivSearchFormContainer {
+    background: #f1ebeb;
+    overflow: hidden;
+    width: 280px;
+    padding: .5rem;
+    border-radius: 300px
+}
+
+.search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    outline: 0
+}
+
+/* MAIN */
+.getCoinsTitle {
+    width: 100%;
+    color: #f1f1f1;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: rgb(254, 44, 85);
+    ;
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.username {
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    background: transparent;
+    border: 2px solid #a8a8a8;
+    width: 250px;
+}
+
+.rechargeTitle {
+    margin: 1rem;
+}
+
+.DivTotalContainer {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.paymentMethods {
+    margin: 1rem;
+    display: flex;
+    gap: .5rem;
+    width: fit-content;
+}
+
+.coinsPrice {
+    background: #3d3d3d;
+    height: 40%;
+    color: #f1f1f1;
+    align-content: center;
+}
+
+.rechargeBtn {
+    margin: 1rem;
+    background-color: #fe2c55;
+    border-radius: .5rem;
+}
+
+
+/* Responsive */
+@media (max-width: 995px) {
+    .price-ButtonContainer {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .price-ButtonContainer {
+        width: 45%;
+    }
+    .rechargeBtn{
+        width: 20rem;
+    }
+}
